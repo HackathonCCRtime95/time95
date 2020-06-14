@@ -10,11 +10,6 @@ export async function up(knex: Knex) {
             .references('id')
             .inTable('points');
 
-        table.integer('user_id')
-            .notNullable()
-            .references('id')
-            .inTable('users');
-
         table.integer('star_id')
             .notNullable()
             .references('id')

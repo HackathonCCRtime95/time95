@@ -1,0 +1,19 @@
+  {
+    "id": 1,
+    "id_user": 1,
+    "timestamp": "78958552",
+    "pedometro":"2000",
+  },
+   {
+    "id": 2,
+    "id_user": 1,
+    "timestamp": "88958552",
+    "pedometro":"2020",
+  },
+   {
+    "id": 3,
+    "id_user": 1,
+    "timestamp": "9636582",
+    "pedometro":"1000",
+  }
+ 

@@ -3,12 +3,16 @@ import knex from '../db/conn';
 
 class UsersController {
     async index(request: Request, response: Response){
-        const {id} = request.params;
-
-        const users = await knex('users')
-            .where('id',id)
-            .select('users.*')
-        return response.json({users});
+        const users = await knex('users').select('*');
+    
+        const serializedItems = users.map(user => {
+           return { 
+                id: user.id,
+                name: user.name,
+                phone: user.phone
+           };
+        });
+        return response.json(serializedItems);
     }
 
 
